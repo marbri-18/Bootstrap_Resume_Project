@@ -40,6 +40,7 @@ h1, h2, h3, h4 {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     color: #FAFAFA;
+    margin-top: 8px;
 }
 
 .inline-block {
@@ -233,3 +234,15 @@ footer {
 .copyright {
     text-align: center;
 }
+
+/*-------------------------------Three Reasons*/
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #E67E22;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
+
