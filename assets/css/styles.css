@@ -319,3 +319,7 @@ footer {
     content: "";
     background: #FAFAFA;
 }
+
+.history-items {
+    margin-bottom: 30px;
+}
