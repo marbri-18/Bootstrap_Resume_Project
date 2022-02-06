@@ -2,17 +2,17 @@ const API_KEY = "AIzaSyCC98DC75dsHFP42IzEws2je3yaw5HDU7s";
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 3,
+        zoom: 7,
         center: {
-            lat: 46.619261,
-            lng: -33.134766
+            lat: 50.75910,
+            lng: -1.99549
         }
     });
-    var labels = "abcdefghijklmnopqrstuvwxyz";
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var locations = [
-        {lat: 50.75910, lng: -1.99549},
-        {lat: 50.76187, lng: -1.99558},
-        {lat: 50.72319, lng: -1.87456},
+        {lat: 50.759100, lng: -1.995490},
+        {lat: 50.761870, lng: -1.995580},
+        {lat: 50.723190, lng: -1.874560},
         {lat: 50.70710, lng: -1.90932},
         {lat: 50.68959, lng: -1.93773},
         {lat: 50.71286, lng: -1.98623},
@@ -27,11 +27,11 @@ function initMap() {
         {lat: 50.76375, lng: -1.99472},
     ];
 
-    var markers = locations.map((location, i) => {
+    var markers = locations.map(function(location, i){
         return new google.maps.Marker({
             position: location,
-            label: labels[i % label.length]
+            label: labels[i % labels.length]
         });
     });
-    var markerCluster = new MarkerClusterer(map, markers, {imagepath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer/m"})
+    var markerCluster = new MarkerClusterer(map, markers, {imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer/m"})
 }
